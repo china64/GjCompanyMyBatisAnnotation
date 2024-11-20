@@ -1,0 +1,36 @@
+const app=Vue.createApp({
+    data(){
+        return {
+            options:[
+                {value:'op1',label:'13'},
+                {value:'op2',label:'abc'},
+                {value:'op3',label:'ttt'},
+                {value:'op4',label:'eee'},
+                {value:'op5',label:'qq'},
+                {value:'op6',label:'ff'},
+            ],
+            cities:[
+                {value:'op1',label:'台北'},
+                {value:'op2',label:'台中'},
+                {value:'op3',label:'台南'},
+            ],
+            foods:[
+                {value:'選項1',label:'a面'},
+                {value:'選項2',label:'b面'},
+                {value:'選項3',label:'c面'},
+                {value:'選項4',label:'d面'},
+            ],
+            myv:'',
+            myv2:'',
+            myv3:''
+        }
+    },
+    methods:{
+        handleChange(val)
+        {
+            alert(val);
+        }
+    }
+});
+app.use(ElementPlus);
+app.mount("#app");

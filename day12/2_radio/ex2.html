@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Import style -->
+  <link rel="stylesheet" href="//unpkg.com/element-plus/dist/index.css" />
+  <!-- Import Vue 3 -->
+  <script src="//unpkg.com/vue@3"></script>
+  <!-- Import component library -->
+  <script src="//unpkg.com/element-plus"></script>
+
+</head>
+<body>
+    <div id="app">
+        Today is:<br>
+        <el-radio-group v-model="radio2">
+            <el-radio-button label="Monday"></el-radio-button>
+            <el-radio-button label="Tuesday">Tue</el-radio-button>
+        </el-radio-group><br>
+        <el-radio-group v-model="radio4" disabled>
+            <el-radio-button label="Wednesday"></el-radio-button>
+            <el-radio-button label="Thursday">Thur</el-radio-button>
+        </el-radio-group>
+    </div>
+    <script src="ex2.js"></script>
+</body>
+</html>

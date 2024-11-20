@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Import style -->
+  <link rel="stylesheet" href="//unpkg.com/element-plus/dist/index.css" />
+  <!-- Import Vue 3 -->
+  <script src="//unpkg.com/vue@3"></script>
+  <!-- Import component library -->
+  <script src="//unpkg.com/element-plus"></script>
+</head>
+<body>
+    <div id="app">
+        <h3>radio</h3>
+        Today is
+        <div>
+            <el-radio v-model="radio1" label="Mon">Monday</el-radio>
+            <el-radio v-model="radio1" :label=5>Trsday</el-radio>
+        </div>
+        <div>
+            <el-radio v-model="radio2" label="Won">Wednesday</el-radio>
+            <el-radio v-model="radio2" label="Thu">Thursday</el-radio>
+        </div>
+        <el-radio disabled v-model="radio3" label="dis1">op1</el-radio>
+        <el-radio :disable=true v-model="radio3" label="dis2">op2</el-radio>
+        <el-radio :disable="bDis" v-model="radio3" label="dis3">op3</el-radio>
+        <br>
+        <el-radio v-model="radio4" label="r4" border @change="mych">op4</el-radio>
+        <el-radio v-model="radio4" label="r5" border @change="mych">op5</el-radio>
+
+        <el-button @click="onbtn">change radio</el-button>
+        <hr>
+        <h4>radio group</h4>
+        <el-radio-group v-model="radio" @change="mysel">
+            <el-radio :label="1">Monday</el-radio>
+            <el-radio :label="2">Tuesday</el-radio>
+            <el-radio :label="3">Wednesday</el-radio>
+        </el-radio-group>
+
+    </div>
+    <script src="ex1.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+        <!-- Import style -->
+        <link rel="stylesheet" href="//unpkg.com/element-plus/dist/index.css" />
+        <!-- Import Vue 3 -->
+        <script src="//unpkg.com/vue@3"></script>
+        <!-- Import component library -->
+        <script src="//unpkg.com/element-plus"></script>
+      
+</head>
+<body>
+    <div id="app">
+        <el-button @click="onLogin()">{{message}}</el-button>
+        <h3>button type</h3>
+        <el-row>
+        <el-button type="primary">主要按鈕</el-button>
+        <el-button type="success">功能按鈕</el-button>
+        <el-button type="info">訊息按鈕</el-button>
+        <el-button type="warning">警告按鈕</el-button>
+        <el-button type="danger">危險按鈕</el-button>
+        </el-row>
+        
+<hr3>超連結案</hr3>
+
+        <el-link href="http://www.google.com" rel="external nofollow" target="_blank" >google</el-link>,
+        <el-link href="http://www.google.com" type="primary" disable>primary</el-link>,
+        <el-link href="http://www.google.com" type="success" underline>success</el-link>,
+        <el-link type="danger">danger</el-link> ,
+        <el-link type="info">info</el-link>
+
+    </div>
+    <script src="ex1.js"></script>
+</body>
+</html>

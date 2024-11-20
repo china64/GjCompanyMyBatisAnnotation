@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Import style -->
+  <link rel="stylesheet" href="//unpkg.com/element-plus/dist/index.css" />
+  <!-- Import Vue 3 -->
+  <script src="//unpkg.com/vue@3"></script>
+  <!-- Import component library -->
+  <script src="//unpkg.com/element-plus"></script>
+</head>
+<body>
+    <div id="app">
+        <el-checkBox-group v-model="checkList" @change="mysel">
+            <el-checkbox label="複選框 A"></el-checkbox>
+            <el-checkbox label="複選框 B"></el-checkbox>
+            <el-checkbox label="複選框 C"></el-checkbox>
+            <el-checkbox label="禁用" disabled></el-checkbox>
+            <el-checkbox label="選中且禁用" disabled></el-checkbox>
+        </el-checkBox-group>
+        <hr>
+        <el-checkbox-group v-model="checkedCities" :min="1" :max="3">
+            <el-checkbox v-for="city in cities" :label="city" :key="city">{{city}}</el-checkbox>
+        </el-checkbox-group>
+        checkList={{CheckList}}
+    </div>
+    <script src="ex1.js"></script>
+</body>
+</html>

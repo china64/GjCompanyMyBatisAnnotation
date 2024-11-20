@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Import style -->
+  <link rel="stylesheet" href="//unpkg.com/element-plus/dist/index.css" />
+  <!-- Import Vue 3 -->
+  <script src="//unpkg.com/vue@3"></script>
+  <!-- Import component library -->
+  <script src="//unpkg.com/element-plus"></script>
+</head>
+<body>
+    <div id="app">
+        <el-input v-model="myinput" placeholder="input content"></el-input>
+        <el-input placeholder="input content" v-model="myinput" :disabled="true"></el-input>
+        <el-input placeholder="input password" v-model="myinput" show-password></el-input>
+        <el-input type="textarea" :rows=3 v-model="textarea"></el-input>
+    </div>
+    <script src="ex1.js">
+    </script>
+    
+</body>
+</html>
